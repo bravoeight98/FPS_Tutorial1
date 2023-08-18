@@ -1215,7 +1215,7 @@ GameObject:
   - component: {fileID: 1628940956}
   - component: {fileID: 1628940955}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Crosshair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1307,6 +1307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 965356395352baf4d981124d6a4534dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  promptText: {fileID: 1247236423}
 --- !u!114 &1882534227
 MonoBehaviour:
   m_ObjectHideFlags: 0
