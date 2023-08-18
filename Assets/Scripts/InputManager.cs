@@ -19,7 +19,7 @@ public class InputManager : MonoBehaviour
 
         motor = GetComponent<PlayerMotor>();
         look = GetComponent<PlayerLook>();
-        
+
         onFoot.Jump.performed += ctx => motor.Jump();
     }
 
@@ -29,6 +29,13 @@ public class InputManager : MonoBehaviour
         //tell the playermotor to move using the value from our movement action.
         motor.ProcessMove(onFoot.Movement.ReadValue<Vector2>());
     }
+
+    private void LateUpdate()
+    {
+        //tell the playermotor to move using the value from our movement action.
+        look.ProcessMove(onFoot.Look.ReadValue<Vector2>());
+    }
+
     private void OnEnable()
     {
         onFoot.Enable();
