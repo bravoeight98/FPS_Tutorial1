@@ -22,6 +22,13 @@ public class PlayerMotor : MonoBehaviour
     void Update()
     {
         isGrounded = controller.isGrounded;
+
+        if (lerpCrouch)
+        {
+            crouchTimer += Time.deltaTime;
+            float p = crouchTimer / 1;
+            p *= p;
+        }
     }
 
     //recieve the inputs for our InputManager.cs and apply them in our character conroller
