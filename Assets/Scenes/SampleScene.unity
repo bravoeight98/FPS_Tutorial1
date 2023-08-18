@@ -221,7 +221,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214663382}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -2, z: -20}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
@@ -472,6 +472,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba51d8b34fe35a94ca912b5fb7b34168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
+  gravity: -9.8
+  jumpHeight: 1
 --- !u!114 &1882534221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,6 +487,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 096baf026a7521d428908689ba36ef01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1882534226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882534215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e336888bb1d294ab6bcfef08fa0a12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 2123642184}
+  xSensitivity: 30
+  ySensitivity: 30
+--- !u!20 &2123642184 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 5735846164616637560, guid: 42bb74fe9a624f94f96692ac7a5be059, type: 3}
+  m_PrefabInstance: {fileID: 4921056026099110803}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4921056026099110803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -546,6 +569,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3529875182149256633, guid: 42bb74fe9a624f94f96692ac7a5be059, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1882534220}
+    - targetCorrespondingSourceObject: {fileID: 3529875182149256633, guid: 42bb74fe9a624f94f96692ac7a5be059, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1882534226}
   m_SourcePrefab: {fileID: 100100000, guid: 42bb74fe9a624f94f96692ac7a5be059, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
