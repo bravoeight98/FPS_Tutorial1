@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
+    private Camera cam; 
     // Start is called before the first frame update
     void Start()
     {
-        
+        cam = GetComponent<PlayerLook>().cam;        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Ray ray = new Ray(cam.transform.position, cam.transform.forward);
     }
 }
