@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     private Camera cam; 
+    [SerializeField]
+    private float distance = 3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +17,11 @@ public class PlayerInteract : MonoBehaviour
     void Update()
     {
         Ray ray = new Ray(cam.transform.position, cam.transform.forward);
+        Debug.DrawRay(ray.origin, ray.direction * distance);
+        RaycastHit hitInfo;
+        if (Physics.Raycast(ray, out hitInfo, distance, mask))
+        {
+            
+        }
     }
 }
