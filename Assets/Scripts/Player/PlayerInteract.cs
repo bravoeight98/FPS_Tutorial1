@@ -8,7 +8,8 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField]
     private float distance = 3f;
     [SerializeField] 
-    private LayerMask mask; 
+    private LayerMask mask;
+    private PlayerUI playerUI; 
     // Start is called before the first frame update
     void Start()
     {
