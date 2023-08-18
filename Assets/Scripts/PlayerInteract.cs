@@ -23,7 +23,10 @@ public class PlayerInteract : MonoBehaviour
         RaycastHit hitInfo;
         if (Physics.Raycast(ray, out hitInfo, distance, mask))
         {
-
+            if (hitInfo.collider.GetComponent<Interactables>() != null)
+            {
+                Debug.Log(hitInfo.collider.GetComponent<Interactables>().promptMessage);
+            }
         }
     }
 }
