@@ -28,6 +28,11 @@ public class PlayerMotor : MonoBehaviour
             crouchTimer += Time.deltaTime;
             float p = crouchTimer / 1;
             p *= p;
+
+            if (crouching)
+                controller.height = MAthf.Lerp(controller.height, 1, p);
+            else
+                controller.height = MAthf.Lerp(controller.height, 2, p);
         }
     }
 
