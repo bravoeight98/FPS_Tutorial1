@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+private bool doorOpen;
 public class Keypad : Interactables
 {
     // Start is called before the first frame update
@@ -18,6 +19,7 @@ public class Keypad : Interactables
 
     protected override void Interact()
     {
-        base.Interact();
+        doorOpen = !doorOpen;
+        door.GetComponent<Animator>().SetBool("IsOpen", doorOpen);
     }
 }
