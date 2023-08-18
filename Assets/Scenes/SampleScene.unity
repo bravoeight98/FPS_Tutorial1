@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 856757960}
   - component: {fileID: 856757959}
   - component: {fileID: 856757958}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Switch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1012,6 +1012,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6f26fc8543335347ade5c230b232cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distance: 3
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &2076758753
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,8 @@ public class PlayerInteract : MonoBehaviour
     private Camera cam; 
     [SerializeField]
     private float distance = 3f;
+    [SerializeField] 
+    private LayerMask mask; 
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,7 @@ public class PlayerInteract : MonoBehaviour
         RaycastHit hitInfo;
         if (Physics.Raycast(ray, out hitInfo, distance, mask))
         {
-            
+
         }
     }
 }
