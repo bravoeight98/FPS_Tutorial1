@@ -526,7 +526,7 @@ Transform:
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 9, y: 25, z: -16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1000,6 +1000,18 @@ MonoBehaviour:
   cam: {fileID: 2123642184}
   xSensitivity: 30
   ySensitivity: 30
+--- !u!114 &1882534227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882534215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6f26fc8543335347ade5c230b232cc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2076758753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1191,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3529875182149256633, guid: 42bb74fe9a624f94f96692ac7a5be059, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1882534226}
+    - targetCorrespondingSourceObject: {fileID: 3529875182149256633, guid: 42bb74fe9a624f94f96692ac7a5be059, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1882534227}
   m_SourcePrefab: {fileID: 100100000, guid: 42bb74fe9a624f94f96692ac7a5be059, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
