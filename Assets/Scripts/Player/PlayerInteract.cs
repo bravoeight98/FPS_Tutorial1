@@ -13,7 +13,8 @@ public class PlayerInteract : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cam = GetComponent<PlayerLook>().cam;        
+        cam = GetComponent<PlayerLook>().cam; 
+        playerUI = GetComponent<PlayerUI>();        
     }
 
     // Update is called once per frame
@@ -26,7 +27,7 @@ public class PlayerInteract : MonoBehaviour
         {
             if (hitInfo.collider.GetComponent<Interactables>() != null)
             {
-                Debug.Log(hitInfo.collider.GetComponent<Interactables>().promptMessage);
+                playerUI.UpdateText(hitInfo.collider.GetComponent<Interactables>().promptMessage);
             }
         }
     }
