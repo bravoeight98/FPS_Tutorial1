@@ -4,15 +4,7 @@ using UnityEngine;
 
 public abstract class Interactables : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //messege displayed to player when looking ant an interactable object.
+    public string promptMessage;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
