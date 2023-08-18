@@ -9,12 +9,14 @@ public class PlayerInteract : MonoBehaviour
     private float distance = 3f;
     [SerializeField] 
     private LayerMask mask;
-    private PlayerUI playerUI; 
+    private PlayerUI playerUI;
+    private InputManager inputManager; 
     // Start is called before the first frame update
     void Start()
     {
         cam = GetComponent<PlayerLook>().cam; 
-        playerUI = GetComponent<PlayerUI>();        
+        playerUI = GetComponent<PlayerUI>(); 
+        inputManager = GetComponent<InputManager>();       
     }
 
     // Update is called once per frame
