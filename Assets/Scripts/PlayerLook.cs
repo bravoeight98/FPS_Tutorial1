@@ -10,5 +10,8 @@ public class PlayerLook : MonoBehaviour
     public float xSensitivity = 30f;
     public float ySensitivity = 30f;
 
-    
+    public void ProcessLook(Vector2 input)
+    {
+        
+    }
 }
