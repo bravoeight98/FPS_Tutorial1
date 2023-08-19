@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 299486874}
   - component: {fileID: 299486873}
   m_Layer: 0
-  m_Name: Door(1)
+  m_Name: Door2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -859,6 +859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2886947b40f174d43a74502598ce87bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useEvents: 0
   promptMessage: '''E'' Use Keyoad'
   door: {fileID: 1656780331}
 --- !u!95 &856757963
@@ -1310,6 +1311,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1656780332}
+  - component: {fileID: 1656780333}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1334,6 +1336,27 @@ Transform:
   - {fileID: 299486876}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1656780333
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656780331}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 12f34b8a7cda41d4283cd56c80980a98, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1882534215 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3529875182149256633, guid: 42bb74fe9a624f94f96692ac7a5be059, type: 3}
@@ -1502,7 +1525,7 @@ GameObject:
   - component: {fileID: 2076758755}
   - component: {fileID: 2076758754}
   m_Layer: 0
-  m_Name: Door
+  m_Name: Door1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
