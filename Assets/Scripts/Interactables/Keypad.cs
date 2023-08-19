@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-private bool doorOpen;
 public class Keypad : Interactables
 {
+    [SerializeField] 
+    private GameObject door; 
+    private bool doorOpen;
+
     // Start is called before the first frame update
     void Start()
     {

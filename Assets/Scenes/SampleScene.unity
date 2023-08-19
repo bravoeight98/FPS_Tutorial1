@@ -326,12 +326,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299486872}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5, y: -1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8, y: -0.75, z: -0.5}
   m_LocalScale: {x: 5, y: 5, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1656780332}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &359032139
 GameObject:
@@ -753,6 +753,7 @@ GameObject:
   - component: {fileID: 856757959}
   - component: {fileID: 856757958}
   - component: {fileID: 856757962}
+  - component: {fileID: 856757963}
   m_Layer: 6
   m_Name: Switch
   m_TagString: Untagged
@@ -858,7 +859,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2886947b40f174d43a74502598ce87bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  promptMessage: Use Keypad
+  promptMessage: '''E'' Use Keyoad'
+  door: {fileID: 1656780331}
+--- !u!95 &856757963
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856757957}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 096eed41c3507db4b96c41f9455d8231, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1247236421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,6 +1301,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628940953}
   m_CullTransparentMesh: 1
+--- !u!1 &1656780331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1656780332}
+  m_Layer: 0
+  m_Name: Door
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1656780332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656780331}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.5, y: -0.25, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2076758757}
+  - {fileID: 299486876}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1882534215 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3529875182149256633, guid: 42bb74fe9a624f94f96692ac7a5be059, type: 3}
@@ -1531,12 +1587,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2076758753}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: -1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3, y: -0.75, z: -0.5}
   m_LocalScale: {x: 5, y: 5, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1656780332}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &2123642184 stripped
 Camera:
@@ -1628,10 +1684,9 @@ SceneRoots:
   - {fileID: 214663386}
   - {fileID: 1467166649}
   - {fileID: 747693425}
-  - {fileID: 2076758757}
-  - {fileID: 299486876}
   - {fileID: 856757961}
   - {fileID: 359032143}
   - {fileID: 1288402232}
   - {fileID: 457941652}
   - {fileID: 2010294362}
+  - {fileID: 1656780332}
