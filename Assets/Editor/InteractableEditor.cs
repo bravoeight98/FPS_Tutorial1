@@ -2,17 +2,10 @@ using UnityEditor;
 
 [CustomEditor(typeof(Interactables),true)]
 
-public class InteractableEditor : MonoBehaviour
+public class InteractableEditor : Editor
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void OnInspectorGUI()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        base.OnInspectorGUI();
     }
 }
