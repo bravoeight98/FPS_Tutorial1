@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class Interactables : MonoBehaviour
 {
+    public bool useEvents;
     //messege displayed to player when looking ant an interactable object.
     public string promptMessage;
 
