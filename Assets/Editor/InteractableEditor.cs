@@ -9,7 +9,7 @@ public class InteractableEditor : Editor
         Interactables interactable = (Interactables)target;
         if(target.GetType() == typeof(EventOnlyInteractable))
         {
-
+            interactable.promptMessage = EditorGUILayout.TextField("Prompt Message", interactable.promptMessage);
         }
         else
         {
